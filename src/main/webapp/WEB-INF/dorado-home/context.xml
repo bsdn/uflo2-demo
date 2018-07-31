@@ -4,4 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
     <import resource="app-context.xml" />
     <import resource="datasources.xml"/>
+    <bean id="propertyConfigurer" parent="uflo.props">
+    <property name="location">
+        <value>/WEB-INF/dorado-home/configure.properties</value>
+    </property>
+</bean>
 </beans>
